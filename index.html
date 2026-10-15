@@ -117,9 +117,9 @@ section:first-of-type{border-top:0}
 .fonctions{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .fonctions li{font:600 .82rem var(--f-titre);border:1px solid var(--trait);border-radius:999px;padding:5px 12px;color:var(--texte)}
 .groupe{display:grid;gap:14px;margin-top:36px}
-.groupe-titre{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--trait);padding-bottom:8px}
+.groupe-titre{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:1px solid var(--trait);padding-bottom:8px}
 .groupe-titre h3{font-size:1.1rem}
-.groupe-titre span{color:var(--discret);font-size:.9rem}
+.groupe-titre span{color:var(--discret);font-size:.9rem;white-space:nowrap}
 .apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:16px}
 .app-tag{font:600 .72rem var(--f-titre);letter-spacing:.08em;text-transform:uppercase;color:var(--discret)}
 .app{background:var(--nuit);border:1px solid var(--trait);border-radius:14px;padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
@@ -307,7 +307,7 @@ summary{cursor:pointer;font-family:var(--f-titre);font-weight:700;color:var(--te
     <div class="intro-section">
       <p class="etiquette">Applications</p>
       <h2>Des outils pour la table et pour le quotidien</h2>
-      <p>Ferrus Dantioch conçoit aussi des applications à installer sur téléphone ou ordinateur. Elles fonctionnent sans compte et gardent les données sur l'appareil.</p>
+      <p>Ferrus Dantioch conçoit aussi des applications à installer sur téléphone ou ordinateur. Elles fonctionnent sans compte et gardent les données sur l'appareil. <strong>Toutes les applications présentées sur ce site sont gratuites, et le resteront.</strong></p>
       <!-- Chrome Android n'installe qu'une seule application par adresse de site,
            et toutes ces applications partagent ferrusdantioch.github.io. -->
       <p style="font-size:.85rem"><strong>Installation sur Android&nbsp;:</strong> si Chrome indique «&nbsp;Cette appli est déjà installée&nbsp;» alors qu'elle ne l'est pas, c'est une limite de Chrome quand une autre application de ce site est déjà installée. Utilisez un autre navigateur (Brave, par exemple), ou choisissez «&nbsp;Créer un raccourci&nbsp;».</p>
@@ -333,7 +333,23 @@ summary{cursor:pointer;font-family:var(--f-titre);font-weight:700;color:var(--te
     </article>
 
     <div class="groupe">
-      <div class="groupe-titre"><h3>Bien-être et organisation</h3><span>3 applications</span></div>
+      <div class="groupe-titre"><h3>Écriture et bureautique</h3><span>2 applications</span></div>
+      <div class="apps">
+        <article class="app">
+          <h3>L'Atelier</h3>
+          <p>L'atelier d'écriture des romans tirés de l'Omni-système. Chaque roman a son univers, ses chapitres et ses scènes (les notes d'un côté, le texte rédigé de l'autre), ses fiches de personnages et de lieux toujours à côté du texte, et un export PDF mis en page comme un livre. Sauvegarde automatique, fonctionne hors ligne.</p>
+          <div class="ligne"><a class="petit-bouton" href="https://ferrusdantioch.github.io/atelier-romans/" target="_blank" rel="noopener">Ouvrir l'Atelier</a></div>
+        </article>
+        <article class="app">
+          <h3>Plume</h3>
+          <p>Un traitement de texte pour ordinateur et téléphone Android : mise en forme, plusieurs documents, enregistrement automatique, export PDF et trois thèmes. Aucun compte : les documents restent sur l'appareil. Première application de la Suite Bureautique de l'Omni-système, d'autres suivront.</p>
+          <div class="ligne"><a class="petit-bouton" href="https://ferrusdantioch.github.io/Plume/" target="_blank" rel="noopener">Ouvrir Plume</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="groupe">
+      <div class="groupe-titre"><h3>Bien-être, accessibilité et organisation</h3><span>5 applications</span></div>
       <div class="apps">
         <article class="app">
           <h3>Refuge</h3>
@@ -349,6 +365,16 @@ summary{cursor:pointer;font-family:var(--f-titre);font-weight:700;color:var(--te
           <h3>Mon budget perso</h3>
           <p>Un gestionnaire de budget pour mobile et ordinateur. Il fonctionne hors ligne et garde toutes les dépenses sur l'appareil.</p>
           <div class="ligne"><a class="petit-bouton" href="https://ferrusdantioch.github.io/mon-budget-perso/" target="_blank" rel="noopener">Ouvrir Mon budget</a></div>
+        </article>
+        <article class="app">
+          <h3>Ma fiche</h3>
+          <p>Une fiche de contact très lisible, pensée pour les personnes infirmes moteurs cérébrales : elle s'affiche en gros, peut être lue à voix haute et aide à préparer un appel à un professionnel de santé. Rien n'est envoyé sur internet. Elle ne remplace pas un appel aux secours.</p>
+          <div class="ligne"><a class="petit-bouton" href="https://ferrusdantioch.github.io/Soutien-IMC/" target="_blank" rel="noopener">Ouvrir Ma fiche</a></div>
+        </article>
+        <article class="app">
+          <h3>SuiviCal</h3>
+          <p>Un suivi des calories et des macronutriments, repas par repas, avec des objectifs quotidiens, l'historique des jours passés et une vue des sept derniers jours. On peut ajouter un aliment en scannant son code-barres ou en photographiant son étiquette. Les données restent sur l'appareil ; seule la recherche par code-barres demande internet.</p>
+          <div class="ligne"><a class="petit-bouton" href="https://ferrusdantioch.github.io/SuiviCal/" target="_blank" rel="noopener">Ouvrir SuiviCal</a></div>
         </article>
       </div>
     </div>
@@ -397,7 +423,8 @@ summary{cursor:pointer;font-family:var(--f-titre);font-weight:700;color:var(--te
       <div class="intro-section" style="margin-bottom:0">
         <p class="etiquette">En préparation</p>
         <h2>Des parties qui deviennent des romans</h2>
-        <p>Les sessions jouées avec l'Omni-système serviront de matière à des romans. Les histoires naissent à la table, avec les règles et les univers présentés ici.</p>
+        <p>Les sessions jouées avec l'Omni-système serviront de matière à des romans. Les histoires naissent à la table, avec les règles et les univers présentés ici. Les romans s'écrivent avec L'Atelier, l'application d'écriture de l'Omni-système.</p>
+        <div class="ligne" style="margin-top:14px"><a class="petit-bouton" href="https://ferrusdantioch.github.io/atelier-romans/" target="_blank" rel="noopener">Découvrir L'Atelier</a></div>
       </div>
       <p class="citation">Les premiers récits seront annoncés sur le Discord.</p>
     </div>
