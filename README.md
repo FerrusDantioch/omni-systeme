@@ -49,11 +49,12 @@ dossier `regles/`, sont la création de Ferrus Dantioch. Toute reproduction
 sans autorisation est interdite. Ils ne sont pas couverts par la licence du
 code.
 
-**Code : licence PolyForm Noncommercial 1.0.0.** Le code de la page (HTML, CSS
+**Code : licence Creative Commons BY-NC-ND 4.0.** Le code de la page (HTML, CSS
 et JavaScript) est distribué sous licence
-**[PolyForm Noncommercial 1.0.0](LICENSE)** (texte officiel en anglais, suivi
-d'une traduction française à titre indicatif). Vous pouvez l'utiliser, le
-modifier et le partager librement, à condition que ce ne soit pas dans un but
-commercial et que le fichier de licence l'accompagne toujours. Toute
-utilisation commerciale nécessite l'accord de l'auteur. Le logiciel est fourni
-« en l'état », sans aucune garantie.
+**[Creative Commons BY-NC-ND 4.0](LICENSE)** (Attribution - Utilisation non
+commerciale - Pas d'Œuvre dérivée), avec le texte officiel en anglais et sa
+traduction française officielle. Vous pouvez l'utiliser et en partager des
+copies identiques, gratuitement, à condition de citer l'auteur (Ferrus
+Dantioch) et d'indiquer la licence. Il est interdit de le vendre ou d'en tirer
+un profit commercial, et de diffuser une version modifiée. Le logiciel est
+fourni « en l'état », sans aucune garantie.
