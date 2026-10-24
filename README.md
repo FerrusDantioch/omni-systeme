@@ -16,9 +16,14 @@ faces (d20) et décliné en quatre univers.
 - **Quatre univers** : Cyberpunk, Fantasy, Space opéra, Horreur / enquête.
   Chacun a son livret de règles et ses fiches de personnage, à télécharger en
   PDF.
-- **Les applications de l'Omni-système** : pour la table de jeu, l'écriture et
-  la bureautique, le bien-être, l'accessibilité et l'organisation, la création
-  de contenu, et des jeux.
+- **Les applications de l'Omni-système**, toutes gratuites :
+  - pour la table de jeu : Omni-Grimoire ;
+  - écriture et bureautique : Omni-Romancier, Omni-Texte, Omni-Tableur ;
+  - bien-être, sport, accessibilité et organisation : Refuge, Cap, Ma fiche
+    (soutien aux personnes IMC), Omni-Budget, Omni-Calories, Omni-Agenda,
+    Omni-Time ;
+  - création de contenu : Omni-Prompteur, Omni-Transcripteur ;
+  - jeux : Omni-Défense, Omni-Arcade, Omni-Réflexion.
 - **Les romans** nés des parties, écrits avec Omni-Romancier.
 - **Le contact**, par e-mail et sur Discord.
 - **Les mentions légales**, en bas de la page.
@@ -29,6 +34,9 @@ faces (d20) et décliné en quatre univers.
 |---|---|
 | `index.html` | Tout le site : textes, mise en page et dé de démonstration |
 | `regles/` | Les livrets de règles, les fiches de personnage et la table de folie (Horreur / enquête), en PDF |
+| `apercu.png` | L'image affichée quand on partage le lien du site (Discord, réseaux sociaux) |
+| `sitemap.xml` | Le plan du site, pour les moteurs de recherche |
+| `robots.txt` | Les consignes pour les moteurs de recherche (tout est autorisé) |
 | `LICENSE` | La licence du code |
 
 Pour mettre à jour un livret ou une fiche, remplacez le PDF dans `regles/` en

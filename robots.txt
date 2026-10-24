@@ -1,0 +1,6 @@
+# Fichier robots : dit aux moteurs de recherche ce qu'ils peuvent visiter.
+# Ici, tout est autorisé, et on leur indique le plan du site.
+User-agent: *
+Allow: /
+
+Sitemap: https://ferrusdantioch.github.io/omni-systeme/sitemap.xml

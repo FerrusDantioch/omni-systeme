@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Plan du site : la liste des pages, pour les moteurs de recherche.
+     Le site n'a qu'une page ; les livrets PDF y sont ajoutés pour être trouvés aussi. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ferrusdantioch.github.io/omni-systeme/</loc></url>
+  <url><loc>https://ferrusdantioch.github.io/omni-systeme/regles/omni-systeme-regles-cyberpunk.pdf</loc></url>
+  <url><loc>https://ferrusdantioch.github.io/omni-systeme/regles/omni-systeme-regles-fantasy.pdf</loc></url>
+  <url><loc>https://ferrusdantioch.github.io/omni-systeme/regles/omni-systeme-regles-space-opera.pdf</loc></url>
+  <url><loc>https://ferrusdantioch.github.io/omni-systeme/regles/omni-systeme-regles-horreur-enquete.pdf</loc></url>
+</urlset>
