@@ -19,7 +19,7 @@ faces (d20) et décliné en quatre univers.
 - **Les applications de l'Omni-système** : pour la table de jeu, l'écriture et
   la bureautique, le bien-être, l'accessibilité et l'organisation, la création
   de contenu, et des jeux.
-- **Les romans** nés des parties, écrits avec L'Atelier.
+- **Les romans** nés des parties, écrits avec Omni-Romancier.
 - **Le contact**, par e-mail et sur Discord.
 - **Les mentions légales**, en bas de la page.
 
