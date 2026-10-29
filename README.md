@@ -18,8 +18,8 @@ faces (d20) et décliné en quatre univers.
   PDF.
 - **Les applications de l'Omni-système**, toutes gratuites :
   - pour la table de jeu : Omni-Grimoire ;
-  - écriture, lecture et bureautique : Omni-Romancier, Omni-Texte,
-    Omni-Tableur, Omni-Liseuse, Omni-Calculateur ;
+  - écriture, lecture, écoute et bureautique : Omni-Romancier, Omni-Texte,
+    Omni-Tableur, Omni-Liseuse, Omni-Musique, Omni-Calculateur ;
   - bien-être, sport, accessibilité et organisation : Refuge, Cap, Ma fiche
     (soutien aux personnes IMC), Omni-Budget, Omni-Calories, Omni-Agenda,
     Omni-Time ;
