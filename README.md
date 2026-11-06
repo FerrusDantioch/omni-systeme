@@ -23,7 +23,8 @@ faces (d20) et décliné en quatre univers.
   - bien-être, sport, accessibilité et organisation : Refuge, Cap, Ma fiche
     (soutien aux personnes IMC), Omni-Budget, Omni-Calories, Omni-Agenda,
     Omni-Courses, Omni-Notes, Omni-Time, Omni-Animalia ;
-  - création de contenu : Omni-Prompteur, Omni-Transcripteur, Omni-Vidéo ;
+  - création de contenu : Omni-Prompteur, Omni-Transcripteur, Omni-Vidéo,
+    Omni-Photo ;
   - jeux : Omni-Défense, Omni-Arcade, Omni-Réflexion.
 - **Les romans** nés des parties, écrits avec Omni-Romancier.
 - **Le contact**, par e-mail et sur Discord.
