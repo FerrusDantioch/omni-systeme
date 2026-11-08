@@ -22,7 +22,8 @@ faces (d20) et décliné en quatre univers.
     Omni-Tableur, Omni-Liseuse, Omni-Musique, Omni-Calculateur ;
   - bien-être, sport, accessibilité et organisation : Refuge, Cap, Ma fiche
     (soutien aux personnes IMC), Omni-Budget, Omni-Calories, Omni-Agenda,
-    Omni-Courses, Omni-Notes, Omni-Time, Omni-Animalia, Omni-MediKit ;
+    Omni-Courses, Omni-Cooking, Omni-Notes, Omni-Time, Omni-Animalia,
+    Omni-MediKit ;
   - création de contenu : Omni-Prompteur, Omni-Transcripteur, Omni-Vidéo,
     Omni-Photo ;
   - jeux : Omni-Défense, Omni-Arcade, Omni-Réflexion.
