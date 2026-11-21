@@ -128,6 +128,7 @@ section:first-of-type{border-top:0}
 /* Applications */
 .vedette{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:center;background:var(--table);border:1px solid var(--trait);border-left:4px solid var(--omni);border-radius:6px 14px 14px 6px;padding:26px}
 .vedette h3{font-size:1.6rem}
+.vedette+.vedette{margin-top:20px}
 .vedette-texte{display:grid;gap:12px;min-width:0}
 .vedette-texte p{color:var(--discret)}
 .fonctions{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
@@ -380,6 +381,27 @@ summary{cursor:pointer;font-family:var(--f-titre);font-weight:700;color:var(--te
         <li>Journal</li>
         <li>Visionneuse PDF et battlemap</li>
         <li>Lecteur audio</li>
+        <li>Hors ligne</li>
+      </ul>
+    </article>
+
+    <article class="vedette">
+      <div class="vedette-texte">
+        <p class="etiquette">Pour jouer sans meneur</p>
+        <h3>Omni-Oracle</h3>
+        <p>Un meneur de jeu de poche pour l'Omni-système. Omni-Oracle permet de jouer en solo ou à deux sans meneur, ou aide un vrai meneur à improviser : il répond aux questions par oui ou par non, fait monter la Pression de scène en scène, et tire missions, rebondissements, PNJ et rencontres dans les tables des quatre univers. Aucun compte : les parties restent sur l'appareil, même hors ligne. Les mêmes tables existent en livret à imprimer, pour jouer avec un vrai dé.</p>
+        <div class="ligne">
+          <a class="bouton" href="https://ferrusdantioch.github.io/omni-oracle/" target="_blank" rel="noopener">Ouvrir Omni-Oracle</a>
+          <a class="petit-bouton" href="https://ferrusdantioch.github.io/omni-oracle/livret.html" target="_blank" rel="noopener">Livret à imprimer</a>
+        </div>
+      </div>
+      <ul class="fonctions" aria-label="Fonctions d'Omni-Oracle">
+        <li>Solo, duo ou aide au meneur</li>
+        <li>Questions oui / non</li>
+        <li>Pression et scènes</li>
+        <li>Tables des quatre univers</li>
+        <li>Intentions des PNJ</li>
+        <li>Livret imprimable</li>
         <li>Hors ligne</li>
       </ul>
     </article>
