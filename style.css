@@ -1,0 +1,172 @@
+/* Style du site de l'Omni-système (chargé par index.html). */
+/* Polices embarquées dans le site (dossier polices/, licence SIL Open Font License :
+   voir licences-tierces.txt). Aucune n'est chargée depuis un autre site. */
+@font-face{font-family:"Oxanium";font-style:normal;font-weight:500;font-display:swap;src:url("polices/oxanium-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"Oxanium";font-style:normal;font-weight:700;font-display:swap;src:url("polices/oxanium-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"Oxanium";font-style:normal;font-weight:800;font-display:swap;src:url("polices/oxanium-latin-800-normal.woff2") format("woff2")}
+/* Literata variable : graisse et taille optique (7 à 72) ajustées automatiquement. */
+@font-face{font-family:"Literata";font-style:normal;font-weight:200 900;font-display:swap;src:url("polices/literata-latin-opsz-normal.woff2") format("woff2")}
+@font-face{font-family:"Literata";font-style:italic;font-weight:200 900;font-display:swap;src:url("polices/literata-latin-opsz-italic.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500;font-display:swap;src:url("polices/jetbrains-mono-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:700;font-display:swap;src:url("polices/jetbrains-mono-latin-700-normal.woff2") format("woff2")}
+
+/* Mise en page : une table de jeu nocturne — colonne de lecture centrale, le d20 comme pièce maîtresse, une bande de couleur propre à chaque univers. Identité sombre assumée (logo violet sur fond sombre). */
+:root{
+  --nuit:#14111d;        /* fond, encre violette très sombre */
+  --table:#1d1929;       /* surfaces */
+  --trait:#332c47;       /* filets et bordures */
+  --texte:#e9e4f2;       /* texte principal */
+  --discret:#a59cbb;     /* texte secondaire */
+  --omni:#a777ff;        /* violet du logo */
+  --halo:#d6c2ff;        /* lueur de l'anneau */
+  --cyber:#ff4fa3; --fantasy:#c9a24a; --space:#5fb4ff; --horreur:#c2412f;
+  --f-titre:"Oxanium", "Trebuchet MS", system-ui, sans-serif;
+  --f-texte:"Literata", Georgia, "Times New Roman", serif;
+  --f-des:"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--nuit);color:var(--texte);font-family:var(--f-texte);font-size:1.0625rem;line-height:1.65}
+a{color:var(--halo);text-underline-offset:3px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--halo);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--f-titre);text-wrap:balance;line-height:1.15;margin:0}
+h2{font-size:clamp(1.6rem,4.5vw,2.2rem);font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0}
+.etiquette{font-family:var(--f-titre);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--discret)}
+.mono{font-family:var(--f-des)}
+
+/* En-tête */
+.entete{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--nuit) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--trait)}
+.entete-in{max-width:1080px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--texte);font-family:var(--f-titre);font-weight:800;letter-spacing:.04em}
+.marque img{width:34px;height:34px;border-radius:8px;display:block}
+.nav{display:flex;gap:4px 16px;flex-wrap:wrap;margin-left:auto;font-family:var(--f-titre);font-size:.9rem}
+.nav a{color:var(--discret);text-decoration:none;padding:4px 0}
+.nav a:hover{color:var(--texte)}
+
+.page{max-width:1080px;margin:0 auto;padding-inline:16px}
+section{padding-block:64px;border-top:1px solid var(--trait)}
+section:first-of-type{border-top:0}
+.intro-section{display:grid;gap:12px;margin-bottom:32px;max-width:65ch}
+.intro-section p{color:var(--discret)}
+
+/* Ouverture */
+.ouverture{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:center;padding-block:56px 64px}
+.ouverture h1{font-size:clamp(2.6rem,9vw,4.8rem);font-weight:800;letter-spacing:-.01em}
+.ouverture h1 span{color:var(--omni)}
+.accroche{font-size:1.2rem;max-width:34ch;margin-top:16px}
+.signature{margin-top:20px;color:var(--discret);font-style:italic}
+.chiffres{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px}
+.chiffres div{display:grid}
+.chiffres b{font-family:var(--f-des);font-size:1.5rem;color:var(--halo)}
+.chiffres small{color:var(--discret);font-size:.85rem}
+
+/* Lanceur de d20 */
+.lanceur{background:var(--table);border:1px solid var(--trait);border-radius:18px;padding:24px;display:grid;gap:16px;justify-items:center;text-align:center}
+.de{position:relative;width:min(220px,60vw);aspect-ratio:1;max-width:100%}
+.de svg{width:100%;height:100%;overflow:visible}
+.de .anneau{fill:none;stroke:var(--halo);stroke-width:2;opacity:.55;filter:drop-shadow(0 0 10px var(--omni))}
+.de .face{fill:#2a1660;stroke:var(--omni);stroke-width:2.5;stroke-linejoin:round}
+.de .arete{fill:none;stroke:var(--omni);stroke-width:1.6;opacity:.7;stroke-linejoin:round}
+.de .valeur{font-family:var(--f-des);font-weight:700;fill:var(--texte);font-size:30px;text-anchor:middle;dominant-baseline:central}
+.de.roule svg{animation:roule .6s cubic-bezier(.3,.7,.3,1)}
+@keyframes roule{0%{transform:rotate(0) scale(.9)}60%{transform:rotate(340deg) scale(1.05)}100%{transform:rotate(360deg) scale(1)}}
+.de.crit-reussite .face{fill:#3a2a12;stroke:var(--fantasy)}
+.de.crit-echec .face{fill:#3a1410;stroke:var(--horreur)}
+.modes{display:inline-flex;border:1px solid var(--trait);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap;justify-content:center}
+.modes button{font:600 .85rem var(--f-titre);color:var(--discret);background:none;border:0;border-radius:999px;padding:6px 12px;cursor:pointer}
+.modes button[aria-pressed="true"]{background:var(--omni);color:#140d24}
+.bouton{font:700 1rem var(--f-titre);letter-spacing:.04em;background:var(--omni);color:#140d24;border:0;border-radius:10px;padding:12px 22px;cursor:pointer}
+.bouton:hover{background:var(--halo)}
+.resultat{min-height:3.3em;font-size:.95rem;color:var(--discret)}
+.resultat strong{color:var(--texte)}
+.note-demo{font-size:.8rem;color:var(--discret)}
+
+/* Mécanique */
+.regles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1px;background:var(--trait);border:1px solid var(--trait);border-radius:14px;overflow:hidden}
+.regle{background:var(--nuit);padding:22px;display:grid;gap:8px;align-content:start;min-width:0}
+.regle .formule{font-family:var(--f-des);color:var(--halo);font-size:.95rem}
+.regle p{color:var(--discret);font-size:.97rem}
+
+/* Univers */
+.univers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.carte{--c:var(--omni);background:var(--table);border:1px solid var(--trait);border-top:4px solid var(--c);border-radius:6px 6px 14px 14px;padding:22px;display:grid;gap:14px;align-content:start;min-width:0}
+.carte.cyber{--c:var(--cyber)}.carte.fantasy{--c:var(--fantasy)}.carte.space{--c:var(--space)}.carte.horreur{--c:var(--horreur)}
+.carte-tete{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.carte h3{color:var(--texte)}
+.statut{font:600 .75rem var(--f-titre);letter-spacing:.08em;text-transform:uppercase;color:var(--c);border:1px solid color-mix(in srgb,var(--c) 55%,transparent);border-radius:999px;padding:3px 10px;white-space:nowrap}
+.carte p{color:var(--discret);font-size:.97rem}
+.docs{list-style:none;margin:0;padding:0;display:grid;gap:6px;border-top:1px dashed var(--trait);padding-top:12px}
+.docs li{display:flex;gap:10px;align-items:baseline;font-size:.92rem}
+.docs li::before{content:"";flex:none;width:8px;height:8px;transform:rotate(45deg) translateY(-1px);background:var(--c)}
+.credit{font-size:.8rem;color:var(--discret);font-style:italic}
+
+/* Bandeau documents */
+.encart{margin-top:24px;padding:18px 20px;border:1px solid var(--trait);border-radius:12px;color:var(--discret);font-size:.95rem;max-width:72ch}
+
+/* Applications */
+.vedette{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px;align-items:center;background:var(--table);border:1px solid var(--trait);border-left:4px solid var(--omni);border-radius:6px 14px 14px 6px;padding:26px}
+.vedette h3{font-size:1.6rem}
+.vedette+.vedette{margin-top:20px}
+.vedette-texte{display:grid;gap:12px;min-width:0}
+.vedette-texte p{color:var(--discret)}
+.fonctions{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.fonctions li{font:600 .82rem var(--f-titre);border:1px solid var(--trait);border-radius:999px;padding:5px 12px;color:var(--texte)}
+.groupe{display:grid;gap:14px;margin-top:36px}
+.groupe-titre{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;border-bottom:1px solid var(--trait);padding-bottom:8px}
+.groupe-titre h3{font-size:1.1rem}
+.groupe-titre span{color:var(--discret);font-size:.9rem;white-space:nowrap}
+.apps{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:16px}
+.app-tag{font:600 .72rem var(--f-titre);letter-spacing:.08em;text-transform:uppercase;color:var(--discret)}
+.app{background:var(--nuit);border:1px solid var(--trait);border-radius:14px;padding:22px;display:grid;gap:10px;align-content:start;min-width:0}
+.app p{color:var(--discret);font-size:.97rem}
+.app .ligne{margin-top:4px}
+.github{margin-top:20px;color:var(--discret);font-size:.95rem}
+
+/* Mention IA */
+.ia{display:grid;gap:8px;padding:18px 20px;border:1px dashed var(--omni);border-radius:12px;max-width:72ch}
+.ia p{color:var(--discret);font-size:.95rem}
+.ia strong{color:var(--texte)}
+
+/* Romans */
+.roman{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:center}
+.citation{font-size:1.3rem;font-style:italic;border-left:3px solid var(--omni);padding-left:18px;max-width:30ch}
+
+/* Auteur */
+.auteur{display:grid;grid-template-columns:auto minmax(0,1fr);gap:28px;align-items:start}
+.medaillon{width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 50% 45%,#2b1f4d,var(--nuit) 70%);border:2px solid var(--omni);overflow:hidden;box-shadow:0 0 24px color-mix(in srgb,var(--omni) 40%,transparent)}
+.medaillon img{width:100%;height:100%;object-fit:cover;display:block}
+.auteur-texte{display:grid;gap:12px;max-width:65ch}
+.nom{font-family:var(--f-titre);font-size:1.5rem;font-weight:700}
+.nom small{display:block;font-size:.95rem;font-weight:500;color:var(--discret);margin-top:2px}
+
+/* Contact */
+.contacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.contact{background:var(--table);border:1px solid var(--trait);border-radius:14px;padding:22px;display:grid;gap:10px;min-width:0}
+.adresse{font-family:var(--f-des);font-size:1rem;word-break:break-all;user-select:all;color:var(--texte)}
+.ligne{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.petit-bouton{display:inline-flex;align-items:center;justify-content:center;min-height:44px;font:600 .85rem var(--f-titre);background:none;color:var(--halo);border:1px solid var(--trait);border-radius:8px;padding:7px 12px;cursor:pointer;text-decoration:none}
+.petit-bouton:hover{border-color:var(--omni)}
+
+/* Pied de page */
+footer{border-top:1px solid var(--trait);padding-block:32px 48px;color:var(--discret);font-size:.9rem;display:grid;gap:16px}
+details{border:1px solid var(--trait);border-radius:12px;padding:14px 18px;background:var(--table)}
+summary{cursor:pointer;font-family:var(--f-titre);font-weight:700;color:var(--texte)}
+.mentions{display:grid;gap:12px;margin-top:14px;max-width:70ch}
+.mentions h4{font-family:var(--f-titre);margin:0 0 2px;color:var(--texte);font-size:.95rem}
+.a-completer{color:var(--fantasy)}
+
+@media (max-width:760px){
+  .ouverture,.roman,.univers,.contacts,.vedette{grid-template-columns:minmax(0,1fr)}
+  .auteur{grid-template-columns:minmax(0,1fr)}
+  section{padding-block:48px}
+  .nav{margin-left:0;width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.de.roule svg{animation:none}}
+
+/* Anciens styles écrits sur les balises (interdits par la règle de sécurité CSP) */
+.note-petite{font-size:.85rem}
+.intro-section.sans-marge-bas{margin-bottom:0}
+.ligne.marge-haut{margin-top:14px}

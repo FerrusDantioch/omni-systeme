@@ -36,7 +36,12 @@ faces (d20) et décliné en quatre univers.
 
 | Fichier | Rôle |
 |---|---|
-| `index.html` | Tout le site : textes, mise en page et dé de démonstration |
+| `index.html` | Les textes et la structure de la page |
+| `style.css` | La mise en page (couleurs, polices, tailles) |
+| `script.js` | Le dé de démonstration et le bouton « Copier l'adresse » |
+| `polices/` | Les trois polices du site (Oxanium, Literata, JetBrains Mono) et leurs licences |
+| `licences-tierces.txt` | Les crédits et licences des polices |
+| `tests/` | Les contrôles automatiques (voir « Vérifier le site ») |
 | `regles/` | Les livrets de règles, les fiches de personnage et la table de folie (Horreur / enquête), en PDF |
 | `apercu.png` | L'image affichée quand on partage le lien du site (Discord, réseaux sociaux) |
 | `sitemap.xml` | Le plan du site, pour les moteurs de recherche |
@@ -46,6 +51,26 @@ faces (d20) et décliné en quatre univers.
 Pour mettre à jour un livret ou une fiche, remplacez le PDF dans `regles/` en
 gardant **exactement le même nom de fichier** : sinon, les liens du site ne le
 trouvent plus.
+
+## Sécurité et vie privée
+
+- **Rien ne se charge depuis un autre site** : les polices sont copiées dans
+  `polices/` (plus de Google Fonts), et une règle de sécurité (CSP, en tête de
+  `index.html`) interdit au navigateur de charger quoi que ce soit ailleurs.
+  Les liens vers Discord, GitHub ou Creative Commons restent cliquables.
+- À cause de cette règle, **rien ne s'écrit directement dans `index.html`** :
+  pas de `<style>`, pas de code `<script>`, pas d'attribut `style="…"` ni
+  `onclick="…"`. La mise en page va dans `style.css`, le code dans `script.js`.
+
+## Vérifier le site
+
+```bash
+node --test
+```
+À lancer depuis le dossier du site (il suffit d'avoir Node.js, rien à
+installer). Vérifie la règle de sécurité, l'absence de chargement externe, la
+présence des fichiers appelés et des polices avec leurs licences, et la taille
+des petits boutons (44 px).
 
 ## Publication
 
