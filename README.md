@@ -17,7 +17,7 @@ faces (d20) et décliné en quatre univers.
   Chacun a son livret de règles et ses fiches de personnage, à télécharger en
   PDF.
 - **Les applications de l'Omni-système**, toutes gratuites :
-  - pour la table de jeu : Omni-Grimoire ;
+  - pour la table de jeu : Omni-Grimoire, Omni-Oracle ;
   - écriture, lecture, écoute et bureautique : Omni-Romancier, Omni-Texte,
     Omni-Tableur, Omni-Schéma, Omni-Liseuse, Omni-Musique, Omni-Calculateur ;
   - bien-être, sport, accessibilité et organisation : Refuge, Cap, Ma fiche
