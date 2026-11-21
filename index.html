@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Règle de sécurité (CSP) : le navigateur ne charge rien depuis un autre site.
+     Style, script et polices viennent du site lui-même ; les images intégrées (data:) sont permises.
+     Les liens vers d'autres sites (Discord, GitHub…) restent cliquables. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="description" content="Omni-système, le jeu de rôle maison de Ferrus Dantioch : règles, univers, applications et contact.">
 <meta name="author" content="Ferrus Dantioch">
 <meta name="theme-color" content="#14111d">
