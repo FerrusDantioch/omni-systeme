@@ -28,7 +28,7 @@ faces (d20) et décliné en quatre univers.
   - création de contenu : Omni-Prompteur, Omni-Transcripteur, Omni-Vidéo,
     Omni-Photo ;
   - jeux : Omni-Défense, Omni-Arcade, Omni-Réflexion.
-- **Les romans** nés des parties, écrits avec Omni-Romancier.
+- **Les romans** nés des parties, écrits avec Omni-Romancier (qui permet aussi d'écrire des romans libres hors JDR).
 - **Le contact**, par e-mail et sur Discord.
 - **Les mentions légales**, en bas de la page.
 
